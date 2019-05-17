@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+	<title>Login | WakeUP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="framework/select2/select2.min.css">
+    
+    <!-- CSS DE TUDO!  -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+
+	<div class="container-contact100" style="background-image: url('images/bgLogin.jpg'); background-size: 100%;">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					WakeUP
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Username obrigatório">
+					<span class="label-input100">Username</span>
+					<input class="input100" type="text" name="username" placeholder="Digite seu username">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Senha obrigatória">
+					<span class="label-input100">Senha</span>
+					<input class="input100" type="password" name="userpass" placeholder="Digite sua senha">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn" id="cadastrarBtn" onclick="cadastrarBtn()">
+						<a href="newaccount.html" style="text-decoration: none;" onclick="cadastrarBtn()">
+						<div class="contact100-form-bgbtn" onclick="cadastrarBtn()"></div>
+
+							<button class="contact100-form-btn">
+								<!-- <a href="newaccount.html"> -->
+									<span>
+										Cadastrar
+									</span>
+									<!-- </a> -->
+								</button>
+							</a>
+					</div>
+							
+                    
+					<div class="wrap-contact100-form-btn" id="entrar">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Entrar
+							</span>
+						</button>
+					</div>
+                    
+                    
+				</div>
+			</form>
+		</div>
+	</div>
+
+    
+	<script src="framework/jquery/jquery-3.2.1.min.js"></script>
+    
+    <!-- div/ID usado para ser 'parente' dos campos como options no framework
+        'Select2' receber os elementos -->
+	<div id="dropDownSelect1"></div>
+	<!-- Select2 = Framework para campos de select  -->
+	<script src="framework/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+
+	<!-- Script para validar se o campo esta preenchido ou não  -->
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+	<title>Cadastrar | WakeUP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="framework/select2/select2.min.css">
+    
+	
+    <!-- CSS DE TUDO!  -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	
+</head>
+<body>
+	
+	
+	<div class="container-contact100" style="background-image: url('images/bgLogin.jpg'); background-size: 100%;">
+		<!-- <div class="scrollbar" id="style-1">
+				<div class="force-overflow"></div>
+			</div> -->
+		<div class="wrap-contact100" style="height: -webkit-fill-available;">
+				
+		
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					WakeUP
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Campo nome obrigatório">
+					<span class="label-input100">Nome</span>
+					<input class="input100" type="text" name="username" placeholder="Digite seu nome">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Campo senha obrigatório">
+					<span class="label-input100">Senha</span>
+					<input class="input100" type="password" name="userpass" placeholder="Digite sua senhas">
+					<span class="focus-input100"></span>
+                </div>
+                
+                <div class="wrap-input100 validate-input" data-validate = "Campo senha obrigatório">
+					<span class="label-input100">Confirme a senha</span>
+					<input class="input100" type="password" name="userpass" placeholder="Digite novamente sua senhas">
+					<span class="focus-input100"></span>
+                </div>
+                
+                <div class="wrap-input100 validate-input" data-validate = "Campo endereço obrigatório">
+					<span class="label-input100">Endereço</span>
+					<input class="input100" type="text" name="useradress" placeholder="Digite seu endereço">
+					<span class="focus-input100"></span>
+                </div>
+                
+                <div class="wrap-input100 validate-input" data-validate = "Data de nascimento obrigatório">
+					<span class="label-input100">Data de nascimento</span>
+					<input class="input100" type="text" name="userdata" placeholder="Digite sua data de nascimento">
+					<span class="focus-input100"></span>
+                </div>
+                
+                
+				<div class="wrap-input100 input100-select">
+                    <span class="label-input100">Sexo</span>
+					<div>
+                        <select class="selection-2" name="service">
+                            <option>Feminino</option>
+							<option>Masculino</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+                
+                
+                <div class="wrap-input100 validate-input">
+                    <span class="label-input100">CPF</span>
+                    <input class="input100" type="text" name="usercpf" placeholder="Digite seu CPF (Opcfional)">
+                    <span class="focus-input100"></span>
+                </div>
+                
+                
+                <div class="wrap-input100 input100-select">
+                    <span class="label-input100">Frequenta alguma igreja?</span>
+                    <div>
+                        <select class="selection-2" name="service">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                    <span class="focus-input100"></span>
+                </div>
+                
+                
+                <div class="wrap-input100 input100-select">
+                    <span class="label-input100">Quer receber nossas News?</span>
+                    <div>
+                        <select class="selection-2" name="service">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                    <span class="focus-input100"></span>
+                </div>
+                
+
+                <div class="wrap-input100 input100-select">
+                    <span class="label-input100">Quer participar do nosso grupo no WhatsApp?</span>
+                    <div>
+                        <select class="selection-2" name="service">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select>
+                    </div>
+                    <span class="focus-input100"></span>
+                </div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							<span>
+								Cadastrar
+							</span>
+						</button>
+					</div>
+					
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+    
+	<script src="framework/jquery/jquery-3.2.1.min.js"></script>
+    
+    <!-- div/ID usado para ser 'parente' dos campos como options no framework
+        'Select2' receber os elementos -->
+	<div id="dropDownSelect1"></div>
+	<!-- Select2 = Framework para campos de select  -->
+	<script src="framework/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+    </script>
+
+    <script src="framework/mask/jquery.mask.js"></script>
+
+
+	<!-- Script para validar se o campo esta preenchido ou não  -->
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>
